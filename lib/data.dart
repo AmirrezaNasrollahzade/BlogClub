@@ -140,7 +140,7 @@ class AppDatabase {
           likes: '2k',
           time: '41hr ago',
           imageFileName: 'small_post_3.jpg'),
-    ];
+     ];
   }
 
   static List<OnBoardingItem> get onBoardingItems {
