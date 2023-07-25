@@ -1,5 +1,4 @@
 import 'package:blog_club/gen/assets.gen.dart';
-import 'package:blog_club/home.dart';
 import 'package:blog_club/onboarding.dart';
 import 'package:flutter/material.dart';
 

@@ -1,6 +1,10 @@
+
+
+// ignore_for_file: deprecated_member_use
+
+import 'package:blog_club/auth.dart';
 import 'package:blog_club/data.dart';
 import 'package:blog_club/gen/assets.gen.dart';
-import 'package:blog_club/home.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -20,6 +24,7 @@ class _OnBoardingState extends State<OnBoarding> {
 
   @override
   void initState() {
+    ///addListener => Listen to changes by _pageController
     _pageController.addListener(() {
       if (_pageController.page!.round() != page) {
         setState(() {
@@ -104,18 +109,20 @@ class _OnBoardingState extends State<OnBoarding> {
                       ),
                       ElevatedButton(
                           onPressed: () {
-                            if (page == items.length - 1) {
-                              Navigator.of(context)
-                                  .pushReplacement(MaterialPageRoute(
-                                builder: (context) {
-                                  return const HomeScreen();
-                                },
-                              ));
-                            } else {
-                              _pageController.animateToPage(page + 1,
-                                  duration: const Duration(milliseconds: 500),
-                                  curve: Curves.decelerate);
-                            }
+                          
+                              if (page == items.length - 1) {
+                                Navigator.of(context)
+                                    .pushReplacement(MaterialPageRoute(
+                                  builder: (context) {
+                                    return const AuthScreen();
+                                  },
+                                ));
+                              } else {
+                                _pageController.animateToPage(page + 1,
+                                    duration: const Duration(milliseconds: 500),
+                                    curve: Curves.decelerate);
+                              }
+                           
                           },
                           style: ButtonStyle(
                             shape: MaterialStatePropertyAll(

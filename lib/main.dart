@@ -1,10 +1,10 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:blog_club/gen/fonts.gen.dart';
 import 'package:blog_club/splash.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
-import 'home.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -28,8 +28,7 @@ class MyApp extends StatelessWidget {
       title: 'Blog Club Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
-          colorScheme:const  ColorScheme.light(
+          colorScheme: const ColorScheme.light(
             primary: primaryColor,
             onPrimary: Colors.white,
             onSurface: primaryTextColor,
@@ -104,7 +103,7 @@ class BottomNavigation extends StatelessWidget {
   const BottomNavigation({super.key});
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 85,
       child: Stack(
         children: [

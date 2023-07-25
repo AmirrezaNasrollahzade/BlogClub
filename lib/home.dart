@@ -1,5 +1,4 @@
-
-
+// ignore_for_file: deprecated_member_use
 
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/cupertino.dart';
@@ -89,9 +88,7 @@ class _CategoryItem extends StatelessWidget {
   final double left;
 
   const _CategoryItem(
-      {required this.category,
-      required this.left,
-      required this.right});
+      {required this.category, required this.left, required this.right});
 
   @override
   Widget build(BuildContext context) {
