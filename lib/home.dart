@@ -55,9 +55,7 @@ class HomeScreen extends StatelessWidget {
 }
 
 class _CategoryList extends StatelessWidget {
-  const _CategoryList({
-    super.key,
-  });
+  const _CategoryList();
 
   @override
   Widget build(BuildContext context) {
@@ -91,8 +89,7 @@ class _CategoryItem extends StatelessWidget {
   final double left;
 
   const _CategoryItem(
-      {super.key,
-      required this.category,
+      {required this.category,
       required this.left,
       required this.right});
 
@@ -158,7 +155,6 @@ class _CategoryItem extends StatelessWidget {
 
 class _StoryList extends StatelessWidget {
   const _StoryList({
-    super.key,
     required this.stories,
   });
 
@@ -185,7 +181,6 @@ class _StoryList extends StatelessWidget {
 
 class _Story extends StatelessWidget {
   const _Story({
-    super.key,
     required this.story,
   });
 

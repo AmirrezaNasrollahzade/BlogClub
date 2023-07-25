@@ -23,11 +23,19 @@ class MyApp extends StatelessWidget {
     const Color primaryTextColor = Color(0xff0D253C);
     const Color secondaryTextColor = Color(0xff2D4379);
     const Color primaryTextButtonColor = Color(0xff376AED);
+    const Color primaryColor = Color(0xff376AED);
     return MaterialApp(
       title: 'Blog Club Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          primarySwatch: Colors.blue,
+
+          colorScheme:const  ColorScheme.light(
+            primary: primaryColor,
+            onPrimary: Colors.white,
+            onSurface: primaryTextColor,
+            onBackground: primaryTextColor,
+            background: Color(0xffFBFCFF),
+          ),
           textButtonTheme: const TextButtonThemeData(
             style: ButtonStyle(
               textStyle: MaterialStatePropertyAll(

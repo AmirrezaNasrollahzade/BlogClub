@@ -1,4 +1,6 @@
 import 'package:blog_club/gen/assets.gen.dart';
+import 'package:blog_club/home.dart';
+import 'package:blog_club/onboarding.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -10,6 +12,18 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
+  void initState() {
+    Future.delayed(const Duration(seconds: 3)).then((value) {
+      Navigator.of(context).pushReplacement(MaterialPageRoute(
+        builder: (context) {
+          return const OnBoarding();
+        },
+      ));
+    });
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
@@ -17,7 +31,9 @@ class _SplashScreenState extends State<SplashScreen> {
           Positioned.fill(
             child: Assets.img.background.splash.image(fit: BoxFit.cover),
           ),
-         
+          Center(
+            child: Assets.img.icons.facebook.image(),
+          ),
         ],
       ),
     );

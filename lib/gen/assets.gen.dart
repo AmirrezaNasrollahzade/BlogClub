@@ -36,6 +36,35 @@ class $AssetsImgBackgroundGen {
 class $AssetsImgIconsGen {
   const $AssetsImgIconsGen();
 
+  /// File path: assets/img/icons/Articles.png
+  AssetGenImage get articles =>
+      const AssetGenImage('assets/img/icons/Articles.png');
+
+  /// File path: assets/img/icons/Facebook.png
+  AssetGenImage get facebook =>
+      const AssetGenImage('assets/img/icons/Facebook.png');
+
+  /// File path: assets/img/icons/Google.png
+  AssetGenImage get google =>
+      const AssetGenImage('assets/img/icons/Google.png');
+
+  /// File path: assets/img/icons/Home.png
+  AssetGenImage get home => const AssetGenImage('assets/img/icons/Home.png');
+
+  /// File path: assets/img/icons/LOGO.svg
+  String get logo => 'assets/img/icons/LOGO.svg';
+
+  /// File path: assets/img/icons/Menu.png
+  AssetGenImage get menu => const AssetGenImage('assets/img/icons/Menu.png');
+
+  /// File path: assets/img/icons/Search.png
+  AssetGenImage get search =>
+      const AssetGenImage('assets/img/icons/Search.png');
+
+  /// File path: assets/img/icons/Twitter.png
+  AssetGenImage get twitter =>
+      const AssetGenImage('assets/img/icons/Twitter.png');
+
   /// File path: assets/img/icons/category_1.png
   AssetGenImage get category1 =>
       const AssetGenImage('assets/img/icons/category_1.png');
@@ -56,9 +85,26 @@ class $AssetsImgIconsGen {
   AssetGenImage get notification =>
       const AssetGenImage('assets/img/icons/notification.png');
 
+  /// File path: assets/img/icons/plus.png
+  AssetGenImage get plus => const AssetGenImage('assets/img/icons/plus.png');
+
   /// List of all assets
-  List<AssetGenImage> get values =>
-      [category1, category2, category3, category4, notification];
+  List<dynamic> get values => [
+        articles,
+        facebook,
+        google,
+        home,
+        logo,
+        menu,
+        search,
+        twitter,
+        category1,
+        category2,
+        category3,
+        category4,
+        notification,
+        plus
+      ];
 }
 
 class $AssetsImgPostsGen {
