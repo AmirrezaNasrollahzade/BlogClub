@@ -331,7 +331,10 @@ class Post extends StatelessWidget {
           ClipRRect(
             borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(24), bottomLeft: Radius.circular(24)),
-            child: Image.asset('assets/img/posts/small/${post.imageFileName}'),
+            child: Image.asset(
+              'assets/img/posts/small/${post.imageFileName}',
+              width: 100,
+            ),
           ),
           Expanded(
             child: Padding(
